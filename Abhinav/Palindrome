@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    
+    int num,reverse=0,a,b;
+    scanf("%d",&num);
+    b=num;
+    for(;num>0;){
+        a=num%10;reverse=reverse*10+a;
+        num=num/10;
+        
+    }
+    if (b==reverse){
+    printf("Palindrome");
+        
+    }
+
+    return 0;
+}
